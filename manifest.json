@@ -1,0 +1,67 @@
+{
+    "BundleType": "Application",
+    "AppIcon": {
+        "18x18": "images/icon.png"
+    },
+    "AppDescription": {
+            "en": "Find similiar artist for the current track you play.",
+            "nl": "Vind vergelijkbare artiesten voor het nummer dat je momenteel speelt."
+    },
+    "ApiPermissions" : {
+            "core" : [
+                "private"
+            ],
+            "social" : [
+                "private"
+            ],
+            "playlists":[
+                "public"
+            ]
+    },
+    "AppName": {
+        "en": "infinify",
+        "nl": "Infinify"
+    },
+    "BundleIdentifier": "infinify",
+    "BundleType": "Application",
+    "BundleVersion": "0.1",
+    "DefaultTabs": [
+            {
+                    "arguments": "index",
+                    "title": {
+                            "nl": "Home",
+                            "en": "Home"
+                    }
+            },
+            {
+                    "arguments": "tabs",
+                    "title": {
+                            "nl": "Artiest Collage",
+                            "en": "Artist Wall"
+                    }
+            },
+            {
+                    "arguments": "nowplaying",
+                    "title": {
+                            "nl": "Nu spelend",
+                            "en": "Now Playing"
+                    }
+            }
+    ],
+    "RequiredInterface": 1,
+    "SupportedLanguages": [
+        "en",
+        "nl"
+    ],
+    "RequiredPermissions": [
+        "http://ws.audioscrobbler.com",
+        "http://www.google.nl",
+        "http://userserve-ak.last.fm",
+        "http://static.ak.fbcdn.net",
+        "http://*.spotify.com", 
+        "http://spotify.com",
+        "http://*",
+        "https://*"
+    ],
+    "VendorIdentifier": "com.infinify"
+}

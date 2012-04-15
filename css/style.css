@@ -1,0 +1,276 @@
+body {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+div#footer {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #CCC;
+    border-top: 1px solid #aaa;
+    box-shadow: 0 0 5px #B6B6B6 inset;
+}
+div#footer p {
+    margin: 0 auto;
+    display: block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+    color: #808080;
+}
+div#brand-bar {
+    height: 50px;
+    width: 100%;
+    background-image: -webkit-linear-gradient(bottom, rgb(106,166,0) 60%, rgb(133,191,0) 100%);
+    margin: 0;
+    padding: 0px;
+    border-bottom: 1px solid #FFF;
+}
+div#brand-bar #image {
+    padding: 5px 0 0 0;
+    height: 40px;
+    width: 100px; 
+    margin: 0 auto;
+}
+div#wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+div#wrapper > div {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px;
+}
+
+h1 {
+    font-size:2em;
+}
+#similar-title {
+    position      : relative;
+    font-size     : 18px;
+    font-weight   : bold;
+    font-family   : Helvetica, Arial, sans-serif;
+    margin        : 13px 0px 3px 0px;
+    color: #5F5F5F;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+    display: block;
+    height: 20px;
+}
+.description {
+    font-size:1.5em;
+    font-style:italic;
+    font-family:Georgia;
+    padding:0 0 25px;
+    line-height:25px;
+}
+
+.player {
+    min-height:140px;
+}
+.player .sp-player {
+    float:left;
+    margin-right:10px;
+}
+.player .sp-list {
+    width:inherit;
+    max-height:inherit;
+}
+.player .sp-image{
+    border-radius: 3px;
+
+}
+#header, .similar-artist-wrapper {
+    width                  : 100%;
+    display                : none;
+    height                 : 150px;
+    overflow               : hidden;
+    border-bottom          : 1px solid #EEE;
+    -webkit-font-smoothing : antialiased;
+    background: url('/images/wrapper-bg.png') repeat-x scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 5px #B6B6B6 inset;
+}
+.similar-artist-wrapper {
+    display: block;
+}
+#cover, .similar-artist-cover {
+    width  : 128px;
+    height : 128px;
+    margin : 10px 15px 10px 10px;
+    float  : left;
+}
+
+#cover .sp-image, .similar-artist-cover .sp-image {
+    width  : 128px;
+    height : 128px;
+    cursor : default;
+}
+
+#meta {
+    position    : relative;
+    width       : 100%;
+    float       : left;
+    white-space : nowrap;
+    overflow    : hidden;
+}
+
+#meta-title, .meta-title {
+    position      : relative;
+    font-size     : 18px;
+    font-weight   : bold;
+    font-family   : Helvetica, Arial, sans-serif;
+    margin        : 13px 0px 3px 0px;
+    color         : #5F5F5F;
+    text-shadow   : 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+#meta-title a {
+    cursor          : pointer;
+}
+
+#meta-title span {
+    position    : absolute;
+    font-weight : normal;
+    font-size   : 14px;
+    color       : #808080;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+    margin      : 1px 0px 0px 5px;
+}
+
+#meta-details {
+    font-size     : 12px;
+    font-family   : Helvetica, Arial, sans-serif;
+    color         : #808080;
+    margin-bottom : 45px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+#meta-buttons {
+    position : absolute;
+    top      : 65px;
+    left     : 155px;
+}
+#button-share {
+    display: none;
+}
+
+button {
+    margin-right: 5px !important; /* .sp-button sets margin: 0; WTF? */
+}
+
+
+#checkbox-star + label {
+    margin-left : 5px;
+}
+
+#more {
+    max-width   : 29%;
+    height      : 150px;
+    float       : left;
+    display     : none;
+    border-left : 1px solid  rgba(255, 255, 255, 0.05);
+    box-shadow  : -1px 0px 0px rgba(0, 0, 0, 0.30);
+}
+
+#more h2 {
+    font-size    : 12px;
+    font-family  : Helvetica, Arial, sans-serif;
+    font-weight  : bold;
+    color        : #bbb;
+    text-shadow  : 0px 1px 1px rgba(0, 0, 0, 0.5);
+    padding      : 10px 0px 0px 15px;
+}
+
+#more h2 a {
+    color : #eee;
+}
+
+#more ul {
+    margin   : 7px -3px;
+    padding  : 3px 3px 3px 18px;
+    height   : 50px;
+    overflow : hidden;
+}
+
+#more li {
+    list-style-type  : none;
+    display          : inline-block;
+    width            : 50px;
+    height           : 50px;
+    margin-right     : 10px;
+}
+
+#more .image {
+    width  : 50px;
+    height : 50px;
+}
+
+#container {
+    clear:both;
+}
+.item {
+  float: left;
+}
+#np-container {
+    clear: both;
+    width: 100%;
+    padding: 5px;
+    background: url('/images/np-bg.png') repeat scroll 0 0 #AAA;
+}
+#np-title {
+        position      : relative;
+        font-size     : 18px;
+        font-weight   : bold;
+        font-family   : Helvetica, Arial, sans-serif;
+        color         : #ffffff;
+        text-shadow   : 0px 1px 1px rgba(0, 0, 0, 0.5);
+        margin        : 13px 0px 3px 0px;
+        height: 30px;
+}
+#np-picholder {
+    float: left;
+}
+#np-image-overlay {
+    width: 254px;
+    height: 30px;
+    background: #FFF;
+    opacity: 0.3;
+    margin: -34px 0 0 0;
+}
+#np-image-title {
+    position: absolute;
+    font-size     : 18px;
+    font-weight   : bold;
+    font-family   : Helvetica, Arial, sans-serif;
+    color: #333;
+    text-shadow: 1px 1px 0 rgba(200, 200, 200, 0.6);
+    margin: -25px 0 0 5px;
+
+}
+#np-more-albums {
+        color         : #ffffff;
+        text-shadow   : 0px 1px 1px rgba(0, 0, 0, 0.5);
+        margin: 10px 0 0 0;
+}
+#np-right {
+    float: left;
+    margin: 0 0 0 10px;
+}
+    #np-right #np-title {
+        margin: 0px;
+        width: 500px;
+    }
+.np-image {
+    border: 1px solid #AAA;
+}
+#np-footer {
+    clear: both;
+}
+.np-mini {
+    float: left;
+    margin: 10px;
+}
