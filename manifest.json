@@ -55,13 +55,7 @@
     ],
     "RequiredPermissions": [
         "http://ws.audioscrobbler.com",
-        "http://www.google.nl",
-        "http://userserve-ak.last.fm",
-        "http://static.ak.fbcdn.net",
-        "http://*.spotify.com", 
-        "http://spotify.com",
-        "http://*",
-        "https://*"
+        "http://userserve-ak.last.fm"
     ],
     "VendorIdentifier": "com.infinify"
 }
