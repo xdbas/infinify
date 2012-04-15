@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Infinify</title>
+
+	<meta charset="utf-8">
+
+    <link rel="stylesheet" href="sp://import/css/api.css">
+    <link rel="stylesheet" href="sp://import/css/player.css">
+    <link rel="stylesheet" href="sp://import/css/list.css">
+    <link rel="stylesheet" href="sp://import/css/eve.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.masonry.min.js" type="text/javascript"></script>
+    <script src="js/infinitescroll.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="brand-bar">
+		<div id="image">
+			<img src="/images/logo.png" alt="logo">
+		</div>
+	</div>
+	<div id="header">
+	    <div id="meta">
+	        <div id="cover"></div>
+	        <h1 id="meta-title" class="sp-text-truncate"></h1>
+	        <h2 id="meta-details" class="sp-text-truncate"></h2>
+	        <div id="meta-buttons">
+	            <button id="button-share" class="sp-button sp-icon"></button>
+	        </div>
+	    </div>
+	</div>
+
+	<div id="wrapper">
+		<div id="index" rel="tab">
+			<h1 id="similar-title" class="sp-text-truncate">Similar Artist Top Playlists</h1>
+			<div id="similar" class="player"></div>
+		</div>
+		<div id="tabs" rel="tab">
+			<div id="container"></div>
+		</div>
+		<div id="nowplaying" rel="tab">
+			<div id="np-container">
+				<div id="np-picholder">
+					<img src="images/loader.gif" width="252" class="np-image" id="np-image" />
+					<div id="np-image-overlay"></div>
+					<span id="np-image-title"></span>
+				</div>
+				<div id="np-right">
+					<h1 id="np-title" class="sp-text-truncate"></h1>
+					<input type="button" class="sp-button" id="previous" value="&laquo Previous" />
+            		<input type="button" class="sp-button" id="next" value="Next &raquo;" />
+            		<h2 id="np-more-albums" class="sp-text-truncate">Albums:</h2>
+            		<div id="np-albums"></div>
+            	</div>
+            	<div id="np-footer">
+            		
+            	</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>&copy; Infinify - By Martijn &amp; Bas <sup><a href="http://project.cmi.hro.nl/2011_2012/spotify_mt1a_t6/blog/">(blog)</a></sup></p>
+	</div>
+	<script>
+		$(function() {
+			var sp = getSpotifyApi(1);
+
+			var Infinify = sp.require('js/logic');
+			Infinify.init();
+		});
+	</script>
+</body>
+</html>
