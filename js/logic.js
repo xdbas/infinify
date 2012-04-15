@@ -1,7 +1,6 @@
 "use strict";
 
-var sp = getSpotifyApi(1);
-    
+var sp = getSpotifyApi(1);  
 var models = sp.require('sp://import/scripts/api/models'),
     views = sp.require('sp://import/scripts/api/views'),
     player = models.player;
